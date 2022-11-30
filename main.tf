@@ -1,5 +1,5 @@
 provider "google" {
-  project     = var.project
+  project     = "${var.project}"
 }
 resource "google_compute_instance" "default" {
   name         = "skiao-test-terraform"
