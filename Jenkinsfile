@@ -9,6 +9,11 @@ pipeline {
                 sh 'terraform fmt'
             }
         }
+        stage('checkout') {
+           steps {
+        checkout scm
+            }
+        }
         stage('terraform Init') {
             steps{
                 sh 'terraform init'
