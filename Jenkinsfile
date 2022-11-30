@@ -10,8 +10,8 @@ pipeline {
             }
         }
         stage('checkout') {
-           steps {
-        checkout scm
+           steps{
+                checkout scm
             }
         }
         stage('terraform Init') {
